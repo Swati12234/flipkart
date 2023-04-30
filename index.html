@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart</title>
+    
+        <link href="https://i.ibb.co/wzKBfR1/logo.png" rel="icon"/>
+        <link rel="stylesheet" href="flipkart.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+        <script type="text/javascript" src="flipkart.js"></script>
+</head>
+<body>
+   
+        <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand disabled" href="#">Flipkart</a>
+                <form class="d-flex">
+                    <input class="form-control me3" type="text" style="width: 500px;" placeholder="Search for products... ">
+                    <button class=" btn btn-outline-light btn" type="button">Login</button>
+                  </form>
+            
+          
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <div class="form-check form-switch p-2">
+                      <input class="form-check-input bg-black" type="checkbox" id="mySwitch" onclick="setDarkMode()" value="yes" checked>
+                      <label class="form-check-label text-light" for="mySwitch">Dark Mode</label>
+                      <!-- <button onclick="document.getElementById('mySwitch').innerHTML = changeMode()"></button> -->
+                    </div>
+               
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link " href="#">Seller</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Grocery </a>
+                    </li>
+                 
+                  <li class="nav-item text-light p-2">
+                    <i class="bi bi-cart3"></i>
+                    <!-- <a class="nav-link " href="#">Cart</a> -->
+                  </li>
+                  <li class="nav-item">
+                    <!-- <i class="bi bi-cart3"></i> -->
+                    <a class="nav-link " href="#">Cart</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+
+            <div class="container">
+                <div class="d-flex">
+                    <div class="p-1">
+                            <img src="https://i.ibb.co/Zhxh2jr/offer.webp" alt="offers" class="gallery"/>
+                           <p>  <b>Offer% </b></br> </p>
+                    </div>  
+                    
+                    <div class="p-1">
+                            <img src="https://i.ibb.co/F85BLZV/mobile.webp" alt="mobiles" class="gallery"/>
+                           <p>  <b>Mobile </b></br> </p>              
+                    </div>
+
+                    <div class="p-1">
+                            <img src="https://i.ibb.co/vHWMbyb/toys.webp" alt="toys" class="gallery"/>
+                          <p>  <b>toys </b></br> </p>
+                   </div>
+
+                    <div class="p-1">
+                            <img src="https://i.ibb.co/nwn8byM/travel.webp" alt="travel" class="gallery"/>
+                            <p>  <b>travel </b></br> </p>
+                    </div>
+
+                    <div class="p-1">
+                      <img src="https://i.ibb.co/Gk5Q5Ck/fashion.webp" alt="fashion" class="gallery"/>
+                      <p>  <b>fashion </b></br></p>
+                    </div>
+                   
+                    <div class="p-1">
+                      <img src="https://i.ibb.co/1qddR2f/grocery.webp" alt="grocery" class="gallery"/>
+                      <p>  <b>grocery </b></br></p>
+                    </div>
+                   
+                    <div class="p-1">
+                      <img src="https://i.ibb.co/YWcvbz5/electronics.webp" alt="Electronics" class="gallery"/>
+                      <p>  <b>Electronics </b></br></p>
+                    </div>
+                    
+                    <div class="p-1">
+                      <img src="https://i.ibb.co/yFqKjmd/appliances.webp" alt="Appliances" class="gallery"/>
+                      <p>  <b>Appliances </b></br></p>
+                    </div>
+
+                    
+                    <div class="p-1">
+                      <img src="https://i.ibb.co/sQ7ShVc/home.webp" alt="Home" class="gallery"/>
+                      <p>  <b>Home </b></br></p>
+                    </div>
+
+                    <div class="p-1">
+                      <img src="https://i.ibb.co/rst1MzH/bike.webp" alt="Home" class="gallery"/>
+                      <p>  <b>Home </b></br></p>
+                    </div>
+                    
+                    
+            </div>
+            </div>
+            
+            <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://i.ibb.co/FV828nk/three.jpg" alt="Los Angeles" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="https://i.ibb.co/yYVMtkm/two.jpg" alt="Chicago" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="https://i.ibb.co/1nS0ZGp/one.jpg" alt="New York" class="d-block w-100">
+    </div>
+  </div>
+
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+</div>
+
+      <div class="box">
+        <div class="d-flex me3">
+
+           <div class="p-5 ">
+            <center> <h2>Best of <br> Electronics</h2> 
+             <button type="button" class="btn btn-primary">VIEW ALL</button> </center>
+           </div>  
+
+           <div class="p-5">
+              <img src="https://i.ibb.co/5MbvQby/camera.webp" alt="offers" class="list"/>
+             <p>  <b>Camera</b> </p>
+             <h6>From Rs.4999 </h6>
+           </div>  
+   
+            <div class="p-5">
+              <img src="https://i.ibb.co/qCvYfjz/laptop2.webp" alt="mobiles" class="list"/>
+             <p>  <b>Laptop </b></br> </p>
+             <h6>From Rs. 47900 </h6>
+            </div>
+
+            <div class="p-5">
+              <img src="https://i.ibb.co/fnMZSBY/monitors.webp" alt="toys" class="list"/>
+            <p>  <b>Monitors </b></br> </p>
+            <h6>From Rs.7900 </h6>
+            </div>
+     
+            <div class="p-5">
+              <img src="https://i.ibb.co/JnpqBfM/powerbank.webp" alt="powerbank" class="list"/>
+            <p>  <b>Power Bank </b></br>  </p>
+            <h6>From Rs.700 </h6>
+            </div>
+        
+            <div class="p-5">
+              <img src="https://i.ibb.co/M6Pp1sd/shavers.webp" alt="shavers" class="list"/>
+            <p>  <b>shavers </b></br></p>
+            <h6>From Rs.999 </h6>
+            </div>
+    
+            <div class="p-5">
+              <img src="https://i.ibb.co/BGjMNMG/printer.webp" alt="printer" class="list"/>
+             <p>  <b>printers</b></br> </p>
+             <h6>From Rs.3999 </h6>
+            </div>
+
+            <div class="p-5">
+            <img src="https://i.ibb.co/ZxzVZGf/whirlpool.jpg" alt="refrigerator" class="fridge"/>
+            <p>  <b>Refrigrator </b></br> </p>
+            <h6>From Rs.9999 </h6>
+            </div>
+        </div>
+    </div>
+ 
+    <div class="box">
+      <div class="d-flex me3">
+
+         <div class="p-5 ">
+          <center> <h2>Best of <br> beauty, food, toys and more</h2> 
+           <button type="button" class="btn btn-primary">VIEW ALL</button> </center>
+         </div>  
+
+         <div class="p-5">
+            <img src="https://i.ibb.co/nQdfBVd/treadmill.webp" alt="Treadmill" class="list"/>
+           <p>  <b>Treadmill</b></br> </p>
+           <h6>From Rs.14000 </h6>
+         </div>  
+ 
+          <div class="p-5">
+            <img src="https://i.ibb.co/MDKbNQK/car-pressure-washer.webp" alt="Car Pressure Washer" class="list"/>
+           <p>  <b>Car Pressure Washer</b></br> </p>
+           <h6>From Rs.4999 </h6>
+          </div>
+          
+
+          <div class="p-5">
+            <img src="https://i.ibb.co/h2svDtB/microphones.webp" alt="toys" class="list"/>
+          <p>  <b>Microphones </b></br> </p>
+          <h6>From Rs.999 </h6>
+          </div>
+          
+          <div class="p-5">
+            <img src=https://i.ibb.co/kgNMrPn/tyres.webp alt="Tyres" class="list"/>
+          <p>  <b>Tyres </b></br>  </p>
+          <h6>From Rs.999 </h6>
+          </div>
+
+          
+      
+          <div class="p-5">
+            <img src="https://i.ibb.co/Pm4PcTx/soft-toys.webp" alt="soft toys" class="list"/>
+          <p>  <b>Soft Toys </b></br></p>
+          <h6>From Rs.199 </h6>
+          </div>
+          
+          <div class="p-5">
+            <img src="https://i.ibb.co/34X8XDV/dry-fruits.webp" alt="printer" class="list"/>
+           <p>  <b>Dry-fruits</b> </p>
+           <h6>From Rs.99 </h6>
+          </div>
+          
+          <div class="p-5">
+          <img src="https://i.ibb.co/yhWgKDn/Gym-Essentials.webp" alt="refrigerator" class="list"/>
+          <p>  <b>Gym-Essentials </b> </p>
+          <h6>From Rs.199 </h6>
+          </div>
+         
+      </div>
+  </div>
+
+
+      <footer>
+      <hr/>
+        <p class="footText">&copy; flipkart 2023</p>
+          <hr/>
+
+        <div class="footDiv">
+          <ul>
+            <li>About Us</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+
+        <div class="footDiv">
+          <ul>
+            <li>About Us</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+
+        <div class="footDiv noBorder">
+        <ul>
+          <li>About Us</li>
+          <li>Contact Us</li>
+        </ul>
+        </div>
+
+  <a href="">
+      <img src="https://i.ibb.co/bsXv4bf/facebook.png" alt="fblogo" class="socialLogo"/>
+  </a>
+  <a href="">
+      <img src="https://i.ibb.co/8c9LJP1/insta.png" alt="fblogo" class="socialLogo"/>
+  </a>
+  <a href="">
+      <img src="https://i.ibb.co/w07K2Vn/youtube1.png" alt="fblogo" class="socialLogo"/>
+  </a>
+</footer>
+<!-- <link rel="stylesheet" href="flipkart.js"> -->
+        </body>
+    </html>

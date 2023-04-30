@@ -1,0 +1,70 @@
+.gallery{
+    width:60%;
+    height:60%;
+   
+}
+h6{
+    text-align: center;
+    /* width:fit-content; */
+    margin-top: 1%;
+    color: darkgreen;
+}
+p{
+    text-align: center;
+}
+
+.d flex{
+width: 100%;
+}
+
+.list{
+    width:160%;
+    height: 60%;
+    margin-top: 18%;
+}
+
+.fridge{
+    width:100%;
+}
+.darkmode{
+    background-color:rgb(63, 62, 62);
+    color:white;
+}
+.footdarkmode{
+    background-color:rgb(63, 62, 62);
+    color:white;
+}
+
+
+/*Footer Section*/
+footer{
+    /* border:5px groove green; */
+    background-color:#2370f4;
+    color:white;
+    text-align: center;
+}
+
+.footText{
+    font-size:20px;
+}
+
+.footDiv{
+    display: inline-block;
+    width:32%;
+    border-right: 2px solid white;
+}
+
+.noBorder{
+    border:none
+}
+
+ul{
+    list-style-type: none;
+}
+#social{
+    float:right
+}
+
+.socialLogo{
+    height:50px;
+}
